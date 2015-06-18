@@ -8,7 +8,7 @@ class TestStringMethods( unittest.TestCase ):
         self.api = ponup.Api()
 
     def test_base_url( self ):
-        self.assertEquals( 'http://api.ponup.com', self.api.get_base_url() )
+        self.assertEqual( 'http://api.ponup.com', self.api.get_base_url() )
 
     def test_return_type( self ):
         games = self.api.retrieve_games()
